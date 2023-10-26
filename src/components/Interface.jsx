@@ -8,10 +8,8 @@ import { styles } from "./styles";
 import { slideIn } from "../utils/motion";
 import StarsCanvas from "./canvas/Stars";
 //import EarthCanvas from "./canvas/Earth";
-import Carousel from 'react-spring-3d-carousel';
+import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
-
-
 
 const Section = (props) => {
   const { children } = props;
@@ -43,7 +41,7 @@ const Interface = () => {
       <AboutSection />
       <SkillsSection />
       <WorkSection />
-      <CertificateSection/>
+      <CertificateSection />
       <ContactSection />
     </div>
   );
@@ -279,65 +277,96 @@ const WorkSection = () => {
 };
 
 const CertificateSection = () => {
-
-
-
   const slides = [
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="1" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp"
+          alt="1"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="2" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp"
+          alt="2"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="3" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp"
+          alt="3"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="4" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp"
+          alt="4"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="5" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp"
+          alt="5"
+        />
+      ),
     },
 
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="6" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp"
+          alt="6"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="7" />
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp"
+          alt="7"
+        />
+      ),
     },
     {
       // key: uuidv4(),
 
-      content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="8" />
-    }
+      content: (
+        <img
+          src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp"
+          alt="8"
+        />
+      ),
+    },
   ];
- 
+
   return (
     <Section>
-      
+      <h2 className="text-5xl font-bold">Certificates</h2>
+
       <div className="flex w-full h-full gap-7 items-center justify-center">
-     
-        <h2 className="text-5xl font-bold">Certificates</h2>
-
-
-
-
-<Carousel slides={slides} />
-
+        <Carousel slides={slides} />
       </div>
     </Section>
   );
@@ -376,7 +405,7 @@ const ContactSection = () => {
           from_email: form.email,
           to_email: "omar.ashraf.zeinhom@outlook.com",
           message: form.message,
-        },
+        }
         //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
@@ -400,74 +429,75 @@ const ContactSection = () => {
   };
   return (
     <Section>
-<section id="contact">
-<div
-      className={` flex flex-row xl:flex-col-reverse overflow-hidden w-full`}
-    >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
-      >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className=' flex flex-col gap-8'
+      <section id="contact">
+        <div
+          className={` flex flex-row xl:flex-col-reverse overflow-hidden w-full`}
         >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='text-black bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+          <motion.div
+            variants={slideIn("left", "tween", 0.2, 1)}
+            className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
-      </motion.div>
+            <p className={styles.sectionSubText}>Get in touch</p>
+            <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <StarsCanvas />
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className=" flex flex-col gap-8"
+            >
+              <label className="flex flex-col">
+                <span className="text-white font-medium mb-4">Your Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="What's your name?"
+                  className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
+                />
+              </label>
+              <label className="flex flex-col">
+                <span className="text-white font-medium mb-4">Your email</span>
+                <input
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="What's your web address?"
+                  className="text-black bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium"
+                />
+              </label>
+              <label className="flex flex-col">
+                <span className="text-white font-medium mb-4">
+                  Your Message
+                </span>
+                <textarea
+                  rows={7}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="What you want to say?"
+                  className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
+                />
+              </label>
 
-      </motion.div>
-    </div>
-</section>
+              <button
+                type="submit"
+                className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
+            </form>
+          </motion.div>
+
+          <motion.div
+            variants={slideIn("right", "tween", 0.2, 1)}
+            className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          >
+            <StarsCanvas />
+          </motion.div>
+        </div>
+      </section>
     </Section>
   );
 };

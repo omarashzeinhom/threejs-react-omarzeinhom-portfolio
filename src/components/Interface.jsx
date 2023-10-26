@@ -7,9 +7,8 @@ import emailjs from "@emailjs/browser";
 import { styles } from "./styles";
 import { slideIn } from "../utils/motion";
 import StarsCanvas from "./canvas/Stars";
-import EarthCanvas from "./canvas/Earth";
+//import EarthCanvas from "./canvas/Earth";
 import Carousel from 'react-spring-3d-carousel';
-import uuidv4 from "uuid";
 import { config } from "react-spring";
 
 
@@ -281,64 +280,55 @@ const WorkSection = () => {
 
 const CertificateSection = () => {
 
-  const getTouches = (evt) => {
-    return (
-      evt.touches || evt.originalEvent.touches // browser API
-    );
-  };
-  state = {
-    goToSlide: 0,
-    offsetRadius: 2,
-    showNavigation: true,
-    enableSwipe: true,
-    config: config.gentle
-  };
+
 
   const slides = [
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="1" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="2" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="3" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="4" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="5" />
     },
 
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="6" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357334/812dc6fd-a43e-49c2-b312-b107a9731318_yzx11u.webp" alt="7" />
     },
     {
-      key: uuidv4(),
+      // key: uuidv4(),
 
       content: <img src="https://res.cloudinary.com/dmbzzkneb/image/upload/v1698357324/f69c9db9-a2c3-44b4-ae4d-02262fef86a9_htvjw3.webp" alt="8" />
     }
   ];
+ 
   return (
     <Section>
+      
       <div className="flex w-full h-full gap-7 items-center justify-center">
      
         <h2 className="text-5xl font-bold">Certificates</h2>

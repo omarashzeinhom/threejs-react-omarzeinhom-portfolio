@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "AG Shield",
     url: "https://agshield.netlify.app/",
-    image: "projects/th.webp",
+    image: "projects/agshield.webp",
     description: " AG🛡️™ Is a script available for Windows Mac and Linux , that Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ",
   },
 

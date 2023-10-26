@@ -397,8 +397,8 @@ const ContactSection = () => {
 
     emailjs
       .send(
-       'service_et892ig',
-      'template_a7rdrz5',
+        `${import.meta.env.VITE_EMAILJS_SERVICE_ID}`,
+        `${import.meta.env.VITE_EMAILJS_TEMPLATE_ID}`,
         {
           from_name: form.name,
           to_name: "Omar Ashraf",
@@ -406,7 +406,7 @@ const ContactSection = () => {
           to_email: "omar.ashraf.zeinhom@outlook.com",
           message: form.message,
         },
-        'eBDZZXRhSJXYwkH1x'
+        `${import.meta.env.VITE_EMAILJS_PUBLIC_KEY}`
       )
       .then(
         () => {

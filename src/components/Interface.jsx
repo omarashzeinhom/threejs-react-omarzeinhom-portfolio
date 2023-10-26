@@ -397,16 +397,16 @@ const ContactSection = () => {
 
     emailjs
       .send(
-        //import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        //import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+       'service_et892ig',
+      'template_a7rdrz5',
         {
           from_name: form.name,
           to_name: "Omar Ashraf",
           from_email: form.email,
           to_email: "omar.ashraf.zeinhom@outlook.com",
           message: form.message,
-        }
-        //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        },
+        'eBDZZXRhSJXYwkH1x'
       )
       .then(
         () => {

@@ -10,7 +10,7 @@ yarn dev
 ## Libraries Added
 
 ```sh
-yarn add three gsap framer-motion framer-motion-3d leva @react-three/fiber
+yarn add three gsap framer-motion framer-motion-3d leva @react-three/fiber uuid react-spring-3d-carousel
 ```
 
 ### References
@@ -26,10 +26,14 @@ yarn add three gsap framer-motion framer-motion-3d leva @react-three/fiber
 [R3F Drei](https://github.com/pmndrs/drei)
 
 [Installation Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
+
 [framer](https://www.framer.com/motion/introduction/)
+
 [react-spring-3d-carousel](https://www.npmjs.com/package/react-spring-3d-carousel)
 
+[uuid](https://www.npmjs.com/package/uuid)
+
 - Assets
-  
+
 [furniture](https://poly.pizza/)
 [](https://polyhaven.com/textures)
